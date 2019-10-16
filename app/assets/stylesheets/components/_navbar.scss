@@ -55,8 +55,11 @@
     margin: 20px auto;
     > .nav-rightside-container {
       > .nav-toggler {
+        display: inline;
+      }
+      > .navbar-rightside {
         display: none;
+      }
     }
-  }
   }
 }
