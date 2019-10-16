@@ -1,0 +1,28 @@
+.indexContainer {
+  height: 70vh;
+  overflow-y: scroll;
+  > .blg-date {
+    display: block;
+    font-size: 1.2rem;
+  }
+  > h1 {
+    font-size: 2rem;
+  }
+  > p {
+    padding-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  background-color: yellow;
+  width: 20vw;
+}
+
+@media only screen and (min-width: 421px) {
+  background-color: yellow;
+  width: 60vw;
+}

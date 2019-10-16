@@ -1,0 +1,20 @@
+.indexContainer {
+  padding: 0;
+  overflow-y: inherit;
+  > p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .indexContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .indexContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

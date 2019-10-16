@@ -1,0 +1,62 @@
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-left-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  > .name {
+    display: block;
+    font-size: 1.3rem;
+    font-family: 'Yesteryear', cursive;
+    transform: rotate(-5deg);
+    padding-right: .5em;
+  }
+  >.profession{
+    font-family: 'Nova Mono', monospace;
+    padding-left: 1em;
+  }
+}
+
+.nav-rightside-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-item {
+  font-family: 'Nova Mono', monospace;
+  text-decoration: none;
+  color: black;
+  padding: 0 .5em;
+  &:hover {
+    color: green;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .nav-rightside-container {
+    > .navbar-rightside {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 421px) {
+  .nav-container {
+    margin: 20px auto;
+    > .nav-rightside-container {
+      > .nav-toggler {
+        display: none;
+    }
+  }
+  }
+}

@@ -1,0 +1,44 @@
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Yesteryear&display=swap');
+//font-family: 'Yesteryear', cursive;
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+//font-family: 'Nova Mono', monospace;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+//font-family: 'Roboto', sans-serif;
+
+html{
+  height: 100%;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    min-height: 93%;
+    margin: 0;
+    padding: 10px;
+    background-color: none;
+  }
+
+  .app-container {
+    margin: 0 auto;
+    width: inherit;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  body {
+    min-height: 96%;
+    margin: 5% auto;
+    padding: 10px;
+    background-color: none;
+  }
+  .app-container {
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 960px;
+  }
+}
