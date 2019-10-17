@@ -25,14 +25,12 @@
     padding-left: 1em;
   }
 }
-
 .nav-rightside-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
-
 .menu-item {
   font-family: 'Nova Mono', monospace;
   text-decoration: none;
@@ -52,7 +50,7 @@
 }
 @media only screen and (min-width: 421px) {
   .nav-container {
-    margin: 20px auto;
+    margin: 0 auto;
     > .nav-rightside-container {
       > .nav-toggler {
         display: inline;

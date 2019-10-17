@@ -1,3 +1,5 @@
+//External libraries
+@import "font-awesome";
 
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Yesteryear&display=swap');
@@ -26,8 +28,8 @@ html{
 
 @media only screen and (min-width: 701px) {
   body {
-    min-height: 96%;
-    margin: 5% auto;
+    max-height: 100%;
+    margin: 30px auto;
     padding: 10px;
     background-color: none;
   }
@@ -39,6 +41,7 @@ html{
     align-items: center;
     margin: 0 auto;
     width: 50%;
+    height: 60%;
     max-width: 960px;
   }
 }
