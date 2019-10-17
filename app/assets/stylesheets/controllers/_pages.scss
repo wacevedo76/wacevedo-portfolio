@@ -1,6 +1,4 @@
 .indexContainer {
-  height: 70vh;
-  overflow-y: scroll;
   > .blg-date {
     display: block;
     font-size: 1.2rem;
@@ -17,12 +15,49 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
-  background-color: yellow;
-  width: 20vw;
-}
+// portrait -------------------------------
 
-@media only screen and (min-width: 421px) {
-  background-color: yellow;
-  width: 60vw;
-}
+  @media screen and (min-width: 991px) and (orientation:portrait) {
+    /* start of desktop styles */
+
+  }
+  @media screen and (max-width: 991px) and (orientation:portrait) {
+    /* start of large tablet styles */
+
+  }
+  @media screen and (max-width: 767px) and (orientation:portrait) {
+    /* start of medium tablet styles */
+
+  }
+  @media screen and (max-width: 479px) and (orientation:portrait) {
+    /* start of phone styles */
+    .indexContainer {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+
+// landscape -------------------------------
+
+  @media screen and (min-width: 991px) and (orientation:landscape) {
+    /* start of desktop styles */
+
+  }
+  @media screen and (max-width: 991px) and (orientation:landscape) {
+    /* start of large tablet styles */
+    .indexContainer {
+      margin: 0 auto;
+      padding: 0 1em;
+      max-height: 70vh;
+      width: 90%;
+      overflow-y: auto;
+    }
+
+  }
+  @media screen and (max-width: 767px) and (orientation:landscape) {
+    /* start of medium tablet styles */
+  }
+  @media screen and (max-width: 479px) and (orientation:landscape) {
+    /* start of phone styles */
+
+  }

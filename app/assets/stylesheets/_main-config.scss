@@ -12,36 +12,43 @@
 html{
   height: 100%;
 }
-@media only screen and (max-width: 700px) {
+
+
+/* Portrait --------------------------------------------------- */
+@media screen and (min-width: 991px){
+  /* start of desktop styles */
   body {
-    min-height: 93%;
-    margin: 0;
-    padding: 10px;
+    margin: 6% 30%;
     background-color: none;
   }
 
   .app-container {
+    border: solid black 1px;
     margin: 0 auto;
+    padding: 2% 10%;
+    max-width: 1020px;
     width: inherit;
   }
 }
-
-@media only screen and (min-width: 701px) {
-  body {
-    max-height: 100%;
-    margin: 30px auto;
-    padding: 10px;
-    background-color: none;
-  }
-  .app-container {
-    border: solid black 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 50%;
-    height: 60%;
-    max-width: 960px;
-  }
+@media screen and (max-width: 991px) and (orientation:portrait) {
+  /* start of large tablet styles */
+}
+@media screen and (max-width: 767px) and (orientation:portrait) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) and (orientation:portrait) {
+  /* start of phone styles */
+}
+/* Landscape -------------------------------------------------- */
+@media screen and (min-width: 991px) and (orientation:landscape) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) and (orientation:landscape) {
+  /* start of large tablet styles */
+}
+@media screen and (max-width: 767px) and (orientation:landscape) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) and (orientation:landscape) {
+  /* start of phone styles */
 }

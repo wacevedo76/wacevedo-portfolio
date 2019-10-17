@@ -1,5 +1,5 @@
 .nav-container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 2em 0em;
   display: flex;
@@ -60,4 +60,35 @@
       }
     }
   }
+}
+
+/* Portrait --------------------------------------------------- */
+@media screen and (min-width: 991px) and (orientation:portrait) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) and (orientation:portrait) {
+  /* start of large tablet styles */
+}
+@media screen and (max-width: 767px) and (orientation:portrait) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) and (orientation:portrait) {
+  /* start of phone styles */
+}
+/* Landscape -------------------------------------------------- */
+@media screen and (min-width: 991px) and (orientation:landscape) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) and (orientation:landscape) {
+  /* start of large tablet styles */
+  .nav-container {
+    padding: .5em 0em;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767px) and (orientation:landscape) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) and (orientation:landscape) {
+  /* start of phone styles */
 }

@@ -1,16 +1,40 @@
 .main-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 1em 0 ;
-  > a {
-    color: black;
+    width: 95%;
+    margin: inherit;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0 ;
+    > a {
+      color: black;
 
+    }
+  }
+
+/* Portrait --------------------------------------------------- */
+@media screen and (min-width: 991px) and (orientation:portrait) {
+  /* start of desktop styles */
+  .main-footer {
+    > a {
+      padding: 0 1em;
+      font-size: 2rem;
+    }
   }
 }
-@media only screen and (max-width: 420px) {
+@media screen and (max-width: 991px) and (orientation:portrait) {
+  /* start of large tablet styles */
+  .main-footer {
+    > a {
+      padding: 0 1em;
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) and (orientation:portrait) {
+  /* start of medium tablet styles */
   .main-footer {
     > a {
       padding: 0 .5em;
@@ -18,10 +42,45 @@
     }
   }
 }
-@media only screen and (min-width: 421px) {
+@media screen and (max-width: 479px) and (orientation:portrait) {
+  /* start of phone styles */
   .main-footer {
     > a {
+      padding: 0 .5em;
+      font-size: 2rem;
+    }
+  }
+}
+/* Landscape -------------------------------------------------- */
+@media screen and (min-width: 991px) and (orientation:landscape) {
+  /* start of desktop styles */
+  .main-footer {
+    > a {
+      padding: 0 .5em;
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 991px) and (orientation:landscape) {
+  /* start of large tablet styles */
+  .main-footer {
+    justify-content: flex-end;
+    > a {
+      background-color: white;
       padding: 0 1em;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation:landscape) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) and (orientation:landscape) {
+  /* start of phone styles */
+  .main-footer {
+    > a {
+      padding: 0 .5em;
       font-size: 2rem;
     }
   }
