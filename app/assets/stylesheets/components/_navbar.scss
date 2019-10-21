@@ -1,43 +1,43 @@
 .nav-container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2em 0em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.nav-left-side {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  padding: 3% 0;
+  > .nav-left-side {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-  > .name {
-    display: block;
-    font-size: 1.3rem;
-    font-family: 'Yesteryear', cursive;
-    transform: rotate(-5deg);
-    padding-right: .5em;
+    > .name {
+      display: block;
+      font-size: 1.3rem;
+      font-family: 'Yesteryear', cursive;
+      transform: rotate(-5deg);
+      padding-right: .5em;
+    }
+
+    >.profession{
+      font-family: 'Nova Mono', monospace;
+      padding-left: 1em;
+    }
   }
-  >.profession{
-    font-family: 'Nova Mono', monospace;
-    padding-left: 1em;
-  }
-}
-.nav-rightside-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.menu-item {
-  font-family: 'Nova Mono', monospace;
-  text-decoration: none;
-  color: black;
-  padding: 0 .5em;
-  &:hover {
-    color: green;
+
+  > .nav-rightside-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    > .menu-item {
+      font-family: 'Nova Mono', monospace;
+      text-decoration: none;
+      color: black;
+      padding: 0 .5em;
+      &:hover {
+        color: green;
+      }
+    }
   }
 }
 
@@ -63,22 +63,23 @@
 }
 
 /* Portrait --------------------------------------------------- */
-@media screen and (min-width: 991px) and (orientation:portrait) {
+@media screen and (min-width: 991px) {
   /* start of desktop styles */
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
 }
 @media screen and (max-width: 991px) and (orientation:portrait) {
   /* start of large tablet styles */
+  .nav-container {
+    padding: 5%;
+  }
 }
 @media screen and (max-width: 767px) and (orientation:portrait) {
   /* start of medium tablet styles */
 }
-@media screen and (max-width: 479px) and (orientation:portrait) {
-  /* start of phone styles */
-}
+
 /* Landscape -------------------------------------------------- */
-@media screen and (min-width: 991px) and (orientation:landscape) {
-  /* start of desktop styles */
-}
 @media screen and (max-width: 991px) and (orientation:landscape) {
   /* start of large tablet styles */
   .nav-container {

@@ -14,50 +14,36 @@
     text-justify: inter-word;
   }
 }
-
-// portrait -------------------------------
-
-  @media screen and (min-width: 991px) and (orientation:portrait) {
-    /* start of desktop styles */
-
+/* Portrait --------------------------------------------------- */
+@media screen and (min-width: 991px) {
+  /* start of desktop styles */
+  .indexContainer {
+    height: 65vh;
   }
-  @media screen and (max-width: 991px) and (orientation:portrait) {
-    /* start of large tablet styles */
-
+}
+@media screen and (max-width: 991px) and (orientation:portrait) {
+  /* start of large tablet styles */
+  .indexContainer {
+    margin: 0 auto;
+    width: 90%;
   }
-  @media screen and (max-width: 767px) and (orientation:portrait) {
-    /* start of medium tablet styles */
-
-  }
-  @media screen and (max-width: 479px) and (orientation:portrait) {
-    /* start of phone styles */
-    .indexContainer {
-      margin: 0 auto;
-      width: 90%;
-    }
-  }
-
-// landscape -------------------------------
-
-  @media screen and (min-width: 991px) and (orientation:landscape) {
-    /* start of desktop styles */
-
-  }
-  @media screen and (max-width: 991px) and (orientation:landscape) {
-    /* start of large tablet styles */
-    .indexContainer {
-      margin: 0 auto;
-      padding: 0 1em;
-      max-height: 70vh;
-      width: 90%;
-      overflow-y: auto;
-    }
-
-  }
-  @media screen and (max-width: 767px) and (orientation:landscape) {
-    /* start of medium tablet styles */
-  }
-  @media screen and (max-width: 479px) and (orientation:landscape) {
-    /* start of phone styles */
-
-  }
+}
+@media screen and (max-width: 767px) and (orientation:portrait) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) and (orientation:portrait) {
+  /* start of phone styles */
+}
+/* Landscape -------------------------------------------------- */
+@media screen and (min-width: 991px) and (orientation:landscape) {
+  /* start of desktop styles */
+}
+@media screen and (max-width: 991px) and (orientation:landscape) {
+  /* start of large tablet styles */
+}
+@media screen and (max-width: 767px) and (orientation:landscape) {
+  /* start of medium tablet styles */
+}
+@media screen and (max-width: 479px) and (orientation:landscape) {
+  /* start of phone styles */
+}

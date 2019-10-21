@@ -13,12 +13,11 @@ html{
   height: 100%;
 }
 
-
 /* Portrait --------------------------------------------------- */
 @media screen and (min-width: 991px){
   /* start of desktop styles */
   body {
-    margin: 6% 30%;
+    margin: 3% 20%;
     background-color: none;
   }
 
@@ -27,11 +26,9 @@ html{
     margin: 0 auto;
     padding: 2% 10%;
     max-width: 1020px;
+    height: 80vh;
     width: inherit;
   }
-}
-@media screen and (max-width: 991px) and (orientation:portrait) {
-  /* start of large tablet styles */
 }
 @media screen and (max-width: 767px) and (orientation:portrait) {
   /* start of medium tablet styles */
