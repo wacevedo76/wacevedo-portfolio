@@ -1,90 +1,45 @@
+.footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 10%;
+  padding-top: .5em;
+
+  > .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 25%;
+    margin: 0 auto;
+    padding: .2em;
+  }
+
+  .fa {
+    color: black;
+    font-size: 2rem;
+    padding: 0 .5em;
+  }
+}
+
 /* Portrait --------------------------------------------------- */
-@media screen and (min-width: 991px) {
+@media screen and (min-height: 992px) and (orientation:portrait) {
   /* start of desktop styles */
-  .footer-container {
-    width: 100%;
-    position: static;
-    bottom: 0;
-    margin: 0 auto;
-    padding: 1em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    > .main-footer {
-      display: inherit;
-      justify-content: center;
-      align-items: center;
-      > a {
-        color: black;
-        font-size: 1.5rem;
-        padding: 0 1em;
-        transition: 1s;
-        &:hover {
-          color: skyblue;
-          transition: 1s;
-        }
-      }
-    }
-  }
 }
-@media screen and (max-width: 991px) and (orientation:portrait) {
+@media screen and (max-height: 991px) and (orientation:portrait) {
   /* start of large tablet styles */
-  .footer-container {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin: 0 auto;
-    padding: 1em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    > .main-footer {
-      display: inherit;
-      justify-content: center;
-      align-items: center;
-      > a {
-        color: black;
-        font-size: 1.5rem;
-        padding: 0 1em;
-        transition: 1s;
-        &:hover {
-          color: skyblue;
-          transition: 1s;
-        }
-      }
-    }
-  }
 }
-@media screen and (max-width: 767px) and (orientation:portrait) {
+@media screen and (max-hight: 767px) and (orientation:portrait) {
   /* start of medium tablet styles */
-  .footer-container {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin: 0 auto;
-    padding: 1em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    > .main-footer {
-      display: inherit;
-      justify-content: center;
-      align-items: center;
-      > a {
-        color: black;
-        font-size: 1.5rem;
-        padding: 0 1em;
-        transition: 1s;
-        &:hover {
-          color: skyblue;
-          transition: 1s;
-        }
-      }
-    }
-  }
+}
+@media screen and (max-height: 479px) and (orientation:portrait) {
+  /* start of phone styles */
 }
 /* Landscape -------------------------------------------------- */
-@media screen and (min-width: 991px) and (orientation:landscape) {
+@media screen and (min-width: 992px) and (orientation:landscape) {
   /* start of desktop styles */
 }
 @media screen and (max-width: 991px) and (orientation:landscape) {

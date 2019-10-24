@@ -1,49 +1,75 @@
-.indexContainer {
+.index-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 inherit;
+  height: 50vh;
+  overflow-y: auto;
+
   > .blg-date {
-    display: block;
-    font-size: 1.2rem;
+    font-size: 1.5em;
   }
-  > h1 {
+  > h2 {
     font-size: 2rem;
   }
   > p {
-    padding-bottom: 0;
+    margin: .5rem;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: justify;
     text-justify: inter-word;
   }
+
+
+
 }
 /* Portrait --------------------------------------------------- */
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) and (orientation:portrait) {
   /* start of desktop styles */
-  .indexContainer {
-    height: 65vh;
+  .index-container {
+    height: 85vh;
   }
 }
 @media screen and (max-width: 991px) and (orientation:portrait) {
   /* start of large tablet styles */
-  .indexContainer {
-    margin: 0 auto;
-    width: 90%;
+  .index-container {
+    height: 85vh;
   }
 }
-@media screen and (max-width: 767px) and (orientation:portrait) {
+@media screen and (max-height: 767px) and (orientation:portrait) {
   /* start of medium tablet styles */
+    .index-container {
+      height: 85vh;
+    }
 }
 @media screen and (max-width: 479px) and (orientation:portrait) {
   /* start of phone styles */
+  .index-container {
+    height:80vh;
+  }
 }
 /* Landscape -------------------------------------------------- */
-@media screen and (min-width: 991px) and (orientation:landscape) {
+@media screen and (min-width: 992px) and (orientation:landscape) {
   /* start of desktop styles */
+  .index-container {
+    height: 70vh
+  }
 }
 @media screen and (max-width: 991px) and (orientation:landscape) {
   /* start of large tablet styles */
+  .index-container {
+    height: 55vh;
+  }
 }
 @media screen and (max-width: 767px) and (orientation:landscape) {
   /* start of medium tablet styles */
+  .index-container {
+    height: 55vh;
+  }
 }
 @media screen and (max-width: 479px) and (orientation:landscape) {
   /* start of phone styles */
+  .index-container {
+    height: 90vh;
+  }
 }

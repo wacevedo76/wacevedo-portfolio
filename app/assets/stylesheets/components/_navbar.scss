@@ -1,91 +1,62 @@
 .nav-container {
   display: flex;
+  flex: 0 1 auto;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 0;
+
+  width: 100%;
   > .nav-left-side {
-    display: inherit;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
     > .name {
-      display: block;
-      font-size: 1.3rem;
       font-family: 'Yesteryear', cursive;
-      transform: rotate(-5deg);
-      padding-right: .5em;
+      font-size: 1.5rem;
+      padding-right: .5rem;
+      transform: rotate(-7deg);
     }
-
-    >.profession{
+    > .profession {
       font-family: 'Nova Mono', monospace;
-      padding-left: 1em;
     }
   }
 
   > .nav-rightside-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    > .menu-item {
-      font-family: 'Nova Mono', monospace;
-      text-decoration: none;
-      color: black;
-      padding: 0 .5em;
-      &:hover {
-        color: green;
-      }
-    }
-  }
-}
 
-@media only screen and (max-width: 420px) {
-  .nav-rightside-container {
-    > .navbar-rightside {
+    > .nav-right-side {
       display: none;
-    }
-  }
-}
-@media only screen and (min-width: 421px) {
-  .nav-container {
-    margin: 0 auto;
-    > .nav-rightside-container {
-      > .nav-toggler {
-        display: inline;
-      }
-      > .navbar-rightside {
-        display: none;
+      flex-direction: row;
+      > a {
+        padding: 0 .5rem;
       }
     }
   }
 }
 
 /* Portrait --------------------------------------------------- */
-@media screen and (min-width: 991px) {
+@media screen and (min-height: 992px) and (orientation:portrait) {
   /* start of desktop styles */
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
 }
-@media screen and (max-width: 991px) and (orientation:portrait) {
+@media screen and (max-height: 991px) and (orientation:portrait) {
   /* start of large tablet styles */
-  .nav-container {
-    padding: 5%;
-  }
 }
-@media screen and (max-width: 767px) and (orientation:portrait) {
+@media screen and (max-hight: 767px) and (orientation:portrait) {
   /* start of medium tablet styles */
 }
-
+@media screen and (max-height: 479px) and (orientation:portrait) {
+  /* start of phone styles */
+}
 /* Landscape -------------------------------------------------- */
+@media screen and (min-width: 992px) and (orientation:landscape) {
+  /* start of desktop styles */
+}
 @media screen and (max-width: 991px) and (orientation:landscape) {
   /* start of large tablet styles */
-  .nav-container {
-    padding: .5em 0em;
-    width: 90%;
-  }
 }
 @media screen and (max-width: 767px) and (orientation:landscape) {
   /* start of medium tablet styles */

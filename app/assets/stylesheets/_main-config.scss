@@ -1,51 +1,53 @@
-//External libraries
-@import "font-awesome";
-
-//Fonts
-@import url('https://fonts.googleapis.com/css?family=Yesteryear&display=swap');
-//font-family: 'Yesteryear', cursive;
-@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
-//font-family: 'Nova Mono', monospace;
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-//font-family: 'Roboto', sans-serif;
-
-html{
-  height: 100%;
+.app-container {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: solid black 1px;
+  margin: 3% auto;
+  padding: 2% 5%;
+  max-width: 1020px;
 }
-
 /* Portrait --------------------------------------------------- */
-@media screen and (min-width: 991px){
-  /* start of desktop styles */
-  body {
-    margin: 3% 20%;
-    background-color: none;
-  }
-
-  .app-container {
-    border: solid black 1px;
-    margin: 0 auto;
-    padding: 2% 10%;
-    max-width: 1020px;
-    height: 80vh;
-    width: inherit;
-  }
+@media screen and (min-height: 992px) and (orientation:portrait) {
+ /* start of desktop styles */
 }
-@media screen and (max-width: 767px) and (orientation:portrait) {
-  /* start of medium tablet styles */
+@media screen and (max-height: 991px) and (orientation:portrait) {
+ /* start of large tablet styles */
+}
+@media screen and (max-height: 767px) and (orientation:portrait) {
+ /* start of medium tablet styles */
 }
 @media screen and (max-width: 479px) and (orientation:portrait) {
-  /* start of phone styles */
+ /* start of phone styles */
+ .app-container {
+  height: 95vh;
+ }
 }
 /* Landscape -------------------------------------------------- */
-@media screen and (min-width: 991px) and (orientation:landscape) {
-  /* start of desktop styles */
+@media screen and (min-width: 992px) and (orientation:landscape) {
+ /* start of desktop styles */
+ .app-container {
+   height: 80vh;
+ }
 }
 @media screen and (max-width: 991px) and (orientation:landscape) {
-  /* start of large tablet styles */
+ /* start of large tablet styles */
+ .app-container {
+   margin: 20px auto;
+   height: 80vh;
+   overflow-y: auto;
+ }
 }
 @media screen and (max-width: 767px) and (orientation:landscape) {
-  /* start of medium tablet styles */
+ /* start of medium tablet styles */
+ .app-container {
+   margin: 20px auto;
+   height: 80vh;
+   overflow-y: auto;
+ }
 }
 @media screen and (max-width: 479px) and (orientation:landscape) {
-  /* start of phone styles */
+ /* start of phone styles */
 }
