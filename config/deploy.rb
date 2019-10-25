@@ -2,8 +2,8 @@
 server 'server', port: 80, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:wacevedo76/portfolio.gitt'
-set :application,     'Portfolio'
-set :user,            'wacevedo'
+set :application,     'portfolio'
+set :user,            'wacevedo76'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
