@@ -1,19 +1,29 @@
-const navMenuButton = document.querySelector('.nav-menu-toggler');
-const navMenu = document.querySelector('.nav-right-side');
+const navMenuButton = document.getElementByClass('.nav-menu-toggler');
+const navMenu = document.getElementByClass('.nav-right-side');
+navMenu.setAttribute('style', 'visibility: hidden;')
 
-// console.log(navMenuButton)
-// console.log(navMenu);
 function navMenuOpen() {
-  navMenu.setAttribute('style', 'display: flex');
+  navMenuButton.classList.add('nav_rotate');
+  navMenu.classList.add('nav_show')
 }
 
-function navMenuclose() {
-  navMenu.setAttribute('style', 'display: none');
+function navMenuClose() {
+  navMenuButton.classList.remove('nav_rotate');
+  navMenu.classList.remove('nav_show')
 }
 
 navMenuButton.addEventListener('click', () => {
-    (navMenu.style.display == 'none') ? navMenuOpen() : navMenuclose();
+    // (navMenu.classList.contains('nav_show')) ? navMenuOpen() : navMenuClose();
+    navMenuButton.classList.add('nav_show')
+    (navMenuButton.classList.contains('nav_show')) ? navMenuOpen() : navMenuClose();
 });
+
+
+
+
+
+
+
 
 
 // function navMenuOpen() {
