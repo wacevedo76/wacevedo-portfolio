@@ -1,8 +1,19 @@
 const navMenuButton = document.querySelector('.nav-menu-toggler');
 const navMenu = document.querySelector('.nav-right-side');
 
-console.log(navMenuButton);
-console.log(navMenu);
+// console.log(navMenuButton)
+// console.log(navMenu);
+function navMenuOpen() {
+  navMenu.setAttribute('style', 'display: flex');
+}
+
+function navMenuclose() {
+  navMenu.setAttribute('style', 'display: none');
+}
+
+navMenuButton.addEventListener('click', () => {
+    (navMenu.style.display == 'none') ? navMenuOpen() : navMenuclose();
+});
 
 
 // function navMenuOpen() {
