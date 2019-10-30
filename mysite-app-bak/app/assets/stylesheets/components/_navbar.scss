@@ -1,0 +1,86 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media only screen and (max-width: 420px) {
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em 1em;
+
+    > .nav-rightside-container {
+      > .nav-menu-toggler {
+        background-color: white;
+        border: none;
+        text-align: right;
+      }
+      > .navbar-rightside {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: auto;
+        right: .5em;
+        z-index: 5;
+
+        background-color: white;
+        border: solid #EEE 1px;
+        padding: .5em;
+        // box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+
+        > .menu-item {
+          text-align: right;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .indexContainer {
+    height: 80vh;
+    overflow: scroll;
+  }
+}
+
+@media only screen and (min-width: 421px) {
+  .navbarContainer {
+    position: static;
+  }
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1em auto;
+    > .nav-rightside-container {
+      > .nav-toggler {
+        display: none;
+      }
+      > .navbar-rightside {
+        display: flex;
+        flex-direction: row;
+
+        > .menu-item {
+          padding: 0 0 0 .5em;
+          text-align: right;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.navbar-leftside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  > .name {
+    font-family: 'Yesteryear', cursive;
+    font-size: 1.3em;
+    padding: 0 .5em 0 0; 
+    transform: rotate(-5deg);
+  }
+  > .profession {
+    font-family: 'Nova Mono', monospace;
+    padding: 0 .5em;
+  }
+}

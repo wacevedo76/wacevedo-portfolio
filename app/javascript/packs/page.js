@@ -1,1 +1,5 @@
-import 'src/application';
+function initAll() {
+  require('../src/application');
+}
+
+  window.onload = initAll;
