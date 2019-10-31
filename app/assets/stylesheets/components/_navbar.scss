@@ -7,31 +7,44 @@
   transition-duration: .5;
 }
 
-.nav-container {
+#navContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  > .nav-left-side {
+  margin: 2vh 0;
+
+  > #navLeftSide {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    > .name {
+    > #navName {
       font-family: 'Yesteryear', cursive;
       font-size: 1.5rem;
       padding-right: .5rem;
       transform: rotate(-7deg);
     }
-    > .profession {
+    > #navProfession {
       font-family: 'Nova Mono', monospace;
       padding-left: .7rem;
     }
   }
 
-  > .nav-rightside-container {
-    > .nav-right-side {
+  > #navRightSideContainer {
+    margin: 0;
+    display: flex;
+
+    > #navToggler {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    > #navMenu {
+      display: flex;
+
       > a {
         font-family: 'Nova Mono', monospace;
         font-weight: bold;
@@ -51,15 +64,16 @@
 }
 
 @media screen and (min-width: 551px){
-  .nav-container {
-    > .nav-rightside-container {
-      > .nav-toggler {
+  #navContainer {
+    > #navRightSideContainer {
+      > #navToggler {
         visibility: visible;
         display: none;
         background-color: skyblue;
       }
 
-      > .nav-right-side {
+      > #navMmenu {
+        visibility: visible;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -70,13 +84,17 @@
 }
 
 @media screen and (max-width: 550px) {
-  .nav-rightside-container{
-    > .nav-toggler {
+  #navRightSideContainer{
+    > #navToggler {
       visibility: visible;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    > .nav-right-side {
-      display: flex;
+    > #navMenu {
+      visibility: hidden;
+      display: none;
       flex-direction: column;
       position: absolute;
       top: auto;
