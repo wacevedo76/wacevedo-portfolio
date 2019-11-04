@@ -1,6 +1,6 @@
 <div id="navContainer">
   <div id="navLeftSide">
-    <span id="navName">W. Acevedo</span> |
+    <%= link_to 'W. Acevedo', root_path, id: 'navName' %> | 
     <span id="navProfession"> WEB DEVELOPER </span>
   </div>
   <div id="navRightSideContainer">
@@ -8,9 +8,7 @@
       <span id="navMenuToggler"><i class="fa fa-bars"></i></span>
     </div>
     <div id="navMenu">
-      <a href="#" class="menu-item">BLOG</a>
-      <a href="#" class="menu-item">CV</a>
-      <a href="#" class="menu-item">PORTFOLIO</a>
+      <%= link_to 'CV', cv_path %>
     </div>
   </div>
 </div>
