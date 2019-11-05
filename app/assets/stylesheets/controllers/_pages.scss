@@ -36,13 +36,26 @@
 @media screen and (min-width: 992px) and (orientation:portrait) {
   /* start of desktop styles */
   .index-container {
-    height: 85vh;
+    height: 80vh;
   }
 }
 @media screen and (max-width: 991px) and (orientation:portrait) {
   /* start of large tablet styles */
   .index-container {
-    height: 85vh;
+    height: 80vh;
+    overflow-y: auto;
+
+    .blog-container {
+      > .blg-date {
+        font-size: 1.3rem;
+      }
+      > h2 {
+        font-size: 2.3rem;
+      }
+      > p {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
 @media screen and (max-height: 767px) and (orientation:portrait) {
