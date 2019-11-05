@@ -1,5 +1,5 @@
 function initAll() {
-  require('../src/application');
+  require('../src/index');
 }
 
-  window.onload = initAll;
+window.onload = initAll;
