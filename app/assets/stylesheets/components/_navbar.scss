@@ -12,6 +12,16 @@
   transition-duration: .2s;
 }
 
+#dayMode {
+  font-size: .7rem;
+  padding-left: 1em;
+}
+
+#nightMode {
+  font-size: .7rem;
+  padding-right: 1em;
+}
+
 #navContainer {
   display: flex;
   flex-direction: row;
