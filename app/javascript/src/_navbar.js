@@ -1,18 +1,17 @@
 const navToggleButton = document.getElementById('navToggler');
+
+function toggleMenu(menu) {
+  // if (menu.style.display == '') {
+  //   menu.setAttribute('display', 'flex');
+  // } else {
+  //   menu.setAttribute('display', '');
+  // }
+  console.log(menu);
+};
+
+
 const navMenu = document.getElementById('navMenu');
-let isOpen = false;
-
-function navToggle(isOpen) {
-
-  if (isOpen == false) {
-    isOpen = true;
-  } else {
-    isOpen = false;
-  }
-
-  console.log(isOpen);
-}
 
 navToggleButton.addEventListener('click', () => {
-  navToggle();
+  toggleMenu(navMenu);
 });
