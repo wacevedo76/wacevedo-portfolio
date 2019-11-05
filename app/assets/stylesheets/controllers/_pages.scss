@@ -68,6 +68,20 @@
   /* start of phone styles */
   .index-container {
     height:80vh;
+
+    overflow-y: auto;
+
+    .blog-container {
+      > .blg-date {
+        font-size: 1rem;
+      }
+      > h2 {
+        font-size: 2rem;
+      }
+      > p {
+        font-size: 1rem;
+      }
+    }
   }
 }
 /* Landscape -------------------------------------------------- */
