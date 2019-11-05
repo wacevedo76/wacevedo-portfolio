@@ -1,18 +1,19 @@
 const navToggleButton = document.getElementById('navToggler');
-const navMenu = document.getElementById('navMenu');
-let isOpen = false;
 
-function navToggle(isOpen) {
-
-  if (isOpen == false) {
-    isOpen = true;
+function toggleMenu(e, menu) {
+  if (menu.style.display == '') {
+    e.target.classList.add('nav_rotate_open');
+    e.target.classList.remove('nav_rotate_close');
+    menu.style.display = 'flex';
   } else {
-    isOpen = false;
+    e.target.classList.add('nav_rotate_close');
+    e.target.classList.remove('nav_rotate_open');
+    menu.style.display = '';
   }
+};
 
-  console.log(isOpen);
-}
+const navMenu = document.getElementById('navMenu');
 
-navToggleButton.addEventListener('click', () => {
-  navToggle();
+navToggleButton.addEventListener('click', (e) => {
+  toggleMenu(e, navMenu);
 });
