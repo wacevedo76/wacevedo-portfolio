@@ -1,3 +1,17 @@
+:root {
+  --seen-primary: black;
+  --seen-seconday: blue;
+  --seen-hover: blue:
+
+  --space-primary: white;
+  --space-secondary: skyblue;
+
+  --font-color: var(--seen-primary);
+  --border-color: var(--seen-primary);
+  --icon-color: var(--seen-primary);
+  --icon-hover: var(--seen-secondary);
+}
+
 .app-container {
   position: static;
   display: flex;
