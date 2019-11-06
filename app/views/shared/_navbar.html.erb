@@ -2,10 +2,15 @@
   <div id="navLeftSide">
     <span id="navName">W. Acevedo</span> |
     <span id="navProfession"> WEB DEVELOPER </span>
-    <div class="dayNight"><span id="dayMode">sun</span>|<span id="nightMode">moon</span></div>
+    <div id="day-night">
+      <div><%= image_tag 'icons/sun-regular.svg', :id => 'dayMode', :class => 'svg-icons' %></div> |
+      <div><%= image_tag 'icons/moon-regular.svg', :id => 'nightMode', :class => 'svg-icons' %></div>
+    </div>
 
-    <!-- <i class="fa fa-sun"></i>
-         <i class="fa fa-moon"></i> -->
+    <!--
+      <i class="fa fa-sun"></i>
+      <i class="fa fa-moon"></i>
+    -->
 
     </div>
   <div id="navRightSideContainer">
