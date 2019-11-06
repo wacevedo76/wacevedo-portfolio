@@ -1,10 +1,45 @@
+:root {
+  --seen-primary: black;
+  --seen-secondary: blue;
+
+  --emphasis-primary: black;
+  --emphasis-secondary: black;
+
+  --seen-hover: blue;
+
+  --space-primary: white;
+  --space-secondary: white;
+
+// ^ base colors --------------------------------------------------
+
+  --h2-color: var(--emphasis-primary);
+  --bold-color: var(--emphasis-secondary);
+
+  --font-color: var(--seen-primary);
+
+  --link-color: var(--seen-primary);
+  --link-hover-color: var(--seen-secondary);
+
+  --border-color: var(--seen-primary);
+
+  --icon-color: var(--seen-primary);
+  --icon-hover: var(--seen-secondary);
+
+  --bg-color: var(--space-primary);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
 .app-container {
   position: static;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  border: solid black 1px;
+  border: solid var(--border-color) 1px;
   margin: 3% auto;
   padding: 2% 5%;
   max-width: 1020px;
