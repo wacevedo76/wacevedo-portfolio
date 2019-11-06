@@ -12,14 +12,18 @@
   transition-duration: .2s;
 }
 
-#dayMode {
-  font-size: .7rem;
-  padding-left: 1em;
+.svg-icons {
+  width: 1em;
+  padding: .5rem;
+  fill: var(--seen-primary);
 }
 
-#nightMode {
-  font-size: .7rem;
-  padding-right: 1em;
+#day-night {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em;
 }
 
 #navContainer {
