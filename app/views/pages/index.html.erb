@@ -25,15 +25,30 @@
       <p>So I began implementing a night and day mode for my site, once they are ready, I'll include a moon and a sun icon somewhere in the same location on all of the pages... which would give the apperace that they are placed there statically.</p>
       <p>coincidentally, CSS custom properties are pretty cool.</p>
       <p>Okay, so I've been thinking about the features to implement on this site, and aside from making the site look less than an eighties-style professional business card (which is what I had intended), when I finish the night/day mode feature. I'll: <br>
+        </p>
         <ul>
           <li>implement a proper blog feature, CMS style (though, the blog markup doesn't take all that much time). Though, that will be difficult to show.</li>
           <li>a bug tracker, to share my woes with the rest of the world.</li>
           <li>(possibly) a time tracker</li>
         </ul>
-      The CSS for the Night/Day modes is pretty much done.. just have to work out the JavaScript, should be done by tomorrow.
-      Okay, have a good day all.
-      </p>
+      <p>The CSS for the Night/Day modes is pretty much done.. just have to work out the JavaScript, should be done by tomorrow.
+      Okay, have a good day all.</p>
     </div>
+
+    <div class="blog-container">
+      <span class='blg-date'>Wed, November 6th, 2019</span>
+      <h2 class="index-header">SVGs, need to learn more :)</h2>
+      <p>I finished the Day | Night mode feature last night, searched on Font Awesome for a sun and moon icon, easy peasy I thought...</p>
+      <p>First issue, for some reason the Font Awesome links didn't work. Now, what's strange is that the icons at the bottom of the page are also from Font Awesome. So I assume that the service is linked / referenced correctly and I check the links that I just entered with the links at in the footer. They appear to be formatted the same way.</p>
+      <p>Okay, so I think to myself, let me just download the svgs, place them in the assets pipeline (Rails Speak), user Rails helper links and I can use them just like I use them when they're linked from Font Awesome... HA! Then reality hits me that these are NOT FONTS! they're images!</p>
+      <p>I have to thank Font Awesome for such a cool service. It's obvious to all who read this and who do frontend work that I don't know much about svg images. Cool subject, I've got to learn more about it.  However, for now, I've got to move on.</p>
+      <p>Tomorrow, I put out my CV page. I'll get the content out by tomorrow afternoon, and hopefuly I can get the responsive feature finished by Friday.</p>
+      <p>Monday morning, I'll start a 5 day sprint to work on my bug tracker. I'm putting my Blog CMS feature on the backburner for the immediate, thought about it and realized that the cms feature will require Authorization and Authentication.</p>
+      <p>Authorization, not real a problem... Authentication is a different animal entirely.</p>
+      <p>Have a great day.</p>
+    </div>
+
+
   </div>
   <%= render 'shared/footer' %>
 </div>
