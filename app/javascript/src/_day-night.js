@@ -3,21 +3,27 @@ const nightModeEle = document.getElementById('nightMode');
 
 function dayNightModeSwitcher(modeChoice) {
   const pageStyles = window.getComputedStyle(document.body);
+  const style = document.documentElement.style;
+  // style.setProperty('--seen-primary', 'black');
 
   if (modeChoice == 'day') {
-    document.documentElement.style.setProperty('--seen-primary', 'black');
-    document.documentElement.style.setProperty('--seen-secondary', 'blue');
-    document.documentElement.style.setProperty('--seen-hover', 'blue');
-    document.documentElement.style.setProperty('--space-primary', 'white');
-    document.documentElement.style.setProperty('--sspace-secondary', 'white');
+    style.setProperty('--seen-primary', 'black');
+    style.setProperty('--seen-secondary', 'blue');
+    style.setProperty('--h2-color','black');
+    style.setProperty('--bold-color', 'black');
+    style.setProperty('--seen-hover', 'blue');
+    style.setProperty('--space-primary', 'white');
+    style.setProperty('--space-secondary', 'white');
   }
 
   if (modeChoice == 'night') {
-    document.documentElement.style.setProperty('--seen-primary', 'white');
-    document.documentElement.style.setProperty('--seen-secondary', 'blue');
-    document.documentElement.style.setProperty('--seen-hover', 'blue');
-    document.documentElement.style.setProperty('--space-primary', 'black');
-    document.documentElement.style.setProperty('--sspace-secondary', 'black');
+    style.setProperty('--seen-primary', '#009688');
+    style.setProperty('--seen-secondary', 'blue');
+    style.setProperty('--h2-color','#d77236');
+    style.setProperty('--bold-color', 'white');
+    style.setProperty('--seen-hover', 'blue');
+    style.setProperty('--space-primary', '#1d1f21');
+    style.setProperty('--space-secondary', '#1d1f21');
   }
 }
 
