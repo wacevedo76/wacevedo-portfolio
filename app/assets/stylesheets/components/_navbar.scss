@@ -96,6 +96,12 @@
 }
 
 @media screen and (max-width: 550px) {
+  #navName {
+    font-size: .7rem;
+  }
+  #navProfession {
+    font-size: .7rem;
+  }
   #navRightSideContainer{
     > #navToggler {
       visibility: visible;
@@ -113,6 +119,7 @@
       z-index: 2;
       box-shadow:0px 0px 3px .1px rgba(0, 0, 0, .2);
 
+      width: 100px;
       background-color: var(--bg-color);
       border: solid var(--border-color) 1px;
       padding: .5em;
