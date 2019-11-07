@@ -1,0 +1,37 @@
+#cv-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  > #cv-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    text-align: right;
+  }
+
+}
+
+#cv-skills {
+  > #cv-skills-content {
+    > ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #cv-header {
+
+    > #cv-title {
+    }
+
+    > #cv-contact {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
