@@ -1,37 +1,97 @@
+
+
+#cv-name {
+  font-size: 3rem;
+}
+
 #cv-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  > #cv-headshot {
+    flex-grow: 1;
+  }
+  > #cv-title {
+    flex-grow: 2;
+  }
   > #cv-contact {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
     text-align: right;
   }
-
 }
-
 #cv-skills {
   > #cv-skills-content {
     > ul {
+      list-style: none;
+      padding-left: 0;
+      height: 190px  ;
       display: flex;
-      flex-direction: column;
+      flex-flow: column wrap;
+
+      > li {
+      }
+    }
+
+  }
+}
+#cv-projects {
+  >#cv-projects-content {
+    > ul{
+      list-style: none;
+      padding-left: 0;
     }
   }
 }
-
 @media screen and (max-width: 479px) {
-  #cv-header {
+  .cvContainer {
+    overflow: hidden;
+    overflow-y: scroll;
 
-    > #cv-title {
-    }
+  > #cv-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    > #cv-contact {
-      flex-direction: column;
+    > #cv-headshot {
+      flex-grow: 1;
       text-align: center;
     }
+    > #cv-title {
+      flex-grow: 1;
+      text-align: center;
+
+      > #cv-name {
+        font-size: 2rem;
+        border-bottom: solid var(--seen-primary) 1px;
+      }
+      > #cv-professional-title {
+        margin-top: 50px;
+      }
+    }
+    > #cv-contact {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center
+    }
   }
+
+  #cv-skills {
+    > #cv-skills-content {
+      > ul {
+        height: auto;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+  }
+}
 }
