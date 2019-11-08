@@ -1,15 +1,15 @@
 
 <div class="app-container">
   <%= render '/shared/navbar' %>
+  
   <div class="cvContainer">
-
     <div id="cv-header">
       <div id="cv-headshot">
         <%= image_tag 'cv/BestProfilePic2.jpg', class: 'avatar-med' %>
       </div>
       <div id="cv-title" class='cv-h1'>
-        <span id="name">William Acevedo</span><br>
-        <span id="professional-title">Full Stack Web Developer</span>
+        <span id="cv-name">William Acevedo</span><br>
+        <span id="cv-professional-title">Full Stack Web Developer</span>
       </div>
       <div id="cv-contact">
         <span id="cv-mobile">+48 690 157 026</span>
@@ -19,16 +19,14 @@
         <span id="cv-github">GitHub: wacevedo76</span>
       </div>
     </div>
-  </div>
-
-  <div id="cv-focus">
+    <div id="cv-focus">
     <div id="cv-focus-title">Focus</div>
     <div id="cv-focus-content">My focus is to secure a position as a web developer where my love of programming can have a meaningful impact on business, as well as have the opportunity to develop my skills in a professional setting.
     </div>
-  </div>
-
-  <div id="cv-skills">
+    </div>
+    <div id="cv-skills">
     <div id="cv-skills-title" class="cv-h2">
+      Skills
     </div>
       <div id="cv-skills-content">
         <ul>
@@ -52,9 +50,8 @@
           <li>Excellent communication, written and interpersonal skills</li>
         </ul>
       </div>
-  </div>
-
-  <div id="cv-projects">
+    </div>
+    <div id="cv-projects">
     <div id="cv-projects-title" class="cv-h2">Projects</div>
     <div id="cv-projects-content">
       <ul>
@@ -63,30 +60,41 @@
         These are two Ruby on Rails, social web app projects to which I contributed a considerable amount of code
       </ul>
     </div>
-  </div>
-
-  <div id="cv-languages">
+    </div>
+    <div id="cv-languages">
     <div id="cv-languages-title" class="cv-h2">Lanugages</div>
     <div id="cv-languages-content">English (native) | Spanish (conversational) Polish (A1)</div>
-  </div>
-
-  <div id="cv-education">
-    <div id="cv-education-title" class="cv-h2">Education</div>
-    <div id="cv-education-content">
-      Le Wagon Berlin - batch #244 | April - June 2019
-      Full Stack Development training program.
-
-      State University of New York at Purchase | 1997 - 2001
-      Major: Jazz Performance. Minor: Liberal Arts.  
     </div>
-  </div>
+    <div id="cv-education">
+    <div id="cv-education-title" class="cv-h2">Education</div>
 
-  <div id="cv-certifications">
-    <div id="cv-title" class="cv-h2"></div>
-  </div>
+    <div id="cv-education-content">
 
-  <div id="cv-previous-experience">
+      <div id="edu-lewagon">
+        <div class="cv-education-location">
+          Le Wagon Berlin - batch #244 | April - June 2019
+        </div>
+        <div class="edu-description">
+          Full Stack Development training program.
+        </div>
+      </div>
+
+      <div id="edu-sunypurchase">
+        <div class="cv-education-location">
+          State University of New York at Purchase | 1997 - 2001
+        </div>
+        <div class="edu-description">
+          Major: Jazz Performance. Minor: Liberal Arts.  
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="cv-certifications">
     <div id="cv-title" class="cv-h2"></div>
+    </div>
+    <div id="cv-previous-experience">
+    <div id="cv-title" class="cv-h2"></div>
+    </div>
   </div>
 
   <%= render 'shared/footer' %>
