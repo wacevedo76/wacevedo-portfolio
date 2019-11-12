@@ -1,6 +1,17 @@
 .avatar-med {
-  width: 10vw;
   border-radius: 50%;
   border: solid var(--seen-primary) 2px;
   padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  .avatar-med {
+    width: 7vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .avatar-med {
+    width: 30vw;
+  }
 }
