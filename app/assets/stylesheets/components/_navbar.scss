@@ -40,10 +40,12 @@
     align-items: center;
 
     > #navName {
+      color: var(--link-color);
       font-family: 'Yesteryear', cursive;
       font-size: 1.5rem;
       padding-right: .5rem;
       transform: rotate(-7deg);
+      text-decoration: none;
     }
     > #navProfession {
       font-family: 'Nova Mono', monospace;

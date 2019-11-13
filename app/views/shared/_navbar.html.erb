@@ -1,24 +1,18 @@
 <div id="navContainer">
   <div id="navLeftSide">
-    <span id="navName">W. Acevedo</span> |
+    <%= link_to 'W. Acevedo', root_path, id: 'navName' %> |
     <span id="navProfession"> WEB DEVELOPER </span>
     <div id="day-night">
       <div><%= image_tag 'icons/sun-regular.svg', :id => 'dayMode', :class => 'svg-icons' %></div> |
       <div><%= image_tag 'icons/moon-regular.svg', :id => 'nightMode', :class => 'svg-icons' %></div>
     </div>
-
-    <!--
-      <i class="fa fa-sun"></i>
-      <i class="fa fa-moon"></i>
-    -->
-
-    </div>
+  </div>
   <div id="navRightSideContainer">
     <div id="navToggler">
       <span id="navMenuToggler"><i class="fa fa-bars nav_rotate_close"></i></span>
     </div>
     <div id="navMenu">
-      <!-- nav menu items -->
+      <%= link_to 'CV', cv_path %>
     </div>
   </div>
 </div>
