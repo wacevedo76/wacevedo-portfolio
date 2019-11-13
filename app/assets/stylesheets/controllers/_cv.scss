@@ -10,6 +10,7 @@ details[open] summary ~ * {
 }
 
 .cv-title {
+  color: var(--bold-color);
   border-bottom: solid var(--seen-primary) 1px;
 }
 .cv-content {
@@ -32,9 +33,35 @@ details[open] summary ~ * {
 .cv-school-description {
   font-style: italic;
 }
+.cv-certification-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cv-certification {
+  color: var(--h2-color);
+  font-size: .9rem;
+  font-weight: bold;
+}
+.cv-certification-date {
+  font-size: 1rem;
+  font-style: italic;
+
+  &:before {
+    content: " - ";
+  }
+}
+.previous-jobs-listing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 #cv-name {
   font-size: 3rem;
+  color: var(--h2-color);
 }
 #cv-header {
   display: flex;
@@ -82,6 +109,14 @@ details[open] summary ~ * {
 }
 
 @media screen and (min-width: 480px) {
+  .cv-certification-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .cv-certification-date {
+    font-size: .8rem;
+    font-style: italic;
+  }
 
   #cv-header {
     > #cv-headshot {
@@ -136,7 +171,7 @@ details[open] summary ~ * {
     list-style: none;
   }
   .cv-fineprint {
-    font-size: .4rem;
+    font-size: .6rem;
     text-align: justify;
     border-bottom: solid var(--seen-primary) 1px;
   }
@@ -153,6 +188,15 @@ details[open] summary ~ * {
     font-style: italic;
   }
 
+  .cv-certification-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .cv-certification-date {
+    font-size: .8rem;
+    font-style: italic;
+  }
+
   #cv-header {
     flex-direction: column;
     justify-content: center;
@@ -163,7 +207,7 @@ details[open] summary ~ * {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-bottom: 10px;
+      padding: .5em 0;
 
       > #name {
         font-size: 1rem;
@@ -187,7 +231,9 @@ details[open] summary ~ * {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center
+      text-align: center;
+
+      font-size: .8rem;
     }
   }
   #cv-skills {
@@ -215,7 +261,6 @@ details[open] summary ~ * {
   #cv-education {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1em;
   }
 }
 @media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
@@ -235,6 +280,9 @@ details[open] summary ~ * {
         font-size: 1.5rem;
         font-weight: bold;
       }
+    }
+    > #cv-contact {
+      font-size: .7rem;
     }
   }
   #cv-skills {
