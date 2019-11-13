@@ -52,13 +52,22 @@ details[open] summary ~ * {
     content: " - ";
   }
 }
-.previous-jobs-listing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.cv-previous-experience-statement {
+  font-size: .8rem;
+  margin-bottom: .5em;
 }
+.cv-experience-professional-title{
+  font-size: .9rem;
+  font-style: italic;
+}
+.previous-jobs {
+  margin: .3em 0;
+  padding: 0 1em;
 
+  > li {
+    font-size: .7rem;
+  }
+}
 #cv-name {
   font-size: 3rem;
   color: var(--h2-color);

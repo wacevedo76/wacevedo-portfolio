@@ -131,19 +131,35 @@
         </div>
       </details>
 
-      <details id="cv-previous-experience" open>
+      <details id="cv-previous-experience" >
         <summary id="cv-previous-experience-title" class="cv-title">Previous Experience</summary>
         <div class="cv-previous-experience-container cv-content">
-          <div class="cv_previous_experience_statement"><%= cv_previous_experience_statement %></div>
+          <div class="cv-previous-experience-statement"><%= cv_previous_experience_statement %></div>
           <div class="professional_title_container">
-              <div class="cv_professional_title">
+              <div class="cv-experience-professional-title">
                 <%= cv_previous_experience_position_elt%>
-                <ul class="previous-jobs">
-                  <li class="previous-jobs-listing"><%= cv_previous_experience_elt_helikon %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
-                      <%= cv_previous_experience_elt_helikon_location %> |
-                      <%= cv_previous_experience_elt_helikon_date %></li>
-                </ul>
               </div>
+                <ul class="previous-jobs">
+                  <li class="previous-jobs-listing">
+                    <%= cv_previous_experience_elt_helikon %> -
+                    <%= cv_previous_experience_elt_helikon_location %> |
+                    <%= cv_previous_experience_elt_helikon_date %></li>
+                  <li class="previous-jobs-listing">
+                    <%= cv_previous_experience_elt_IH %> -
+                    <%= cv_previous_experience_elt_IH_location %> |
+                    <%= cv_previous_experience_elt_IH_date %></li>
+                </ul>
+          </div>
+          <div class="professional_title_container">
+              <div class="cv-experience-professional-title">
+                <%= cv_previous_experience_position_asd%>
+              </div>
+                <ul class="previous-jobs">
+                  <li class="previous-jobs-listing">
+                    <%= cv_previous_experience_elt_cv %> &nbsp;&nbsp;-
+                    <%= cv_previous_experience_elt_cv_location %> |
+                    <%= cv_previous_experience_elt_cv_date %></li>
+                </ul>
           </div>
         </div>
       </details>
