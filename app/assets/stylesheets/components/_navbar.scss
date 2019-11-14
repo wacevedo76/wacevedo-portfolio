@@ -1,3 +1,9 @@
+.username {
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav_show {
   visibility: visible;
 }
@@ -102,6 +108,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  .username {
+    display: none;
+  }
   #navName {
     font-size: .7rem;
   }

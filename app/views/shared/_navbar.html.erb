@@ -11,8 +11,18 @@
     <div id="navToggler">
       <span id="navMenuToggler"><i class="fa fa-bars nav_rotate_close"></i></span>
     </div>
+    <% if user_signed_in? %>
+      <div class="username">
+      <%= current_user.email %> - 
+      </div>
+    <% end %>
     <div id="navMenu">
       <%= link_to 'CV', cv_path %>
+      <% if user_signed_in? %>
+        <%= link_to('LOGOUT', destroy_user_session_path, method: :delete) %>
+      <% else %>
+        <%= link_to 'LOGIN', new_user_session_path %>
+      <% end %>
     </div>
   </div>
 </div>
