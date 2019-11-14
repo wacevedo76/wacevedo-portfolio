@@ -1,24 +1,29 @@
-******************** W. Acevedo - Welcome to my personal portfolio ********************
-The technologies I am using in this Rails project is as follows
+******************** W. Acevedo - Welcome to my personal portfolio ********************<br />
+<p>The technologies I am using in this Rails project is as follows:<br />
 
 Rbenv (Ruby 2.5.3)
-
-  Gems
-    Rails 6
-    postgresql
-    Puma
-    SASSC-Rails
-    Webpacker
-    Turbolinks
-    Jbuilder
-    Bootsnap
-    FontAwesome (font-awesome-rails)
-    Simple_Form
-    Devise
-
-  NPM (Yarn)
-    Babel
-    React
-    Actioncable
-    Active Storage
-    Turbolinks
+<ul>
+  <li>Gems</li>
+  <ul>
+    <li>Rails 6</li>
+    <li>postgresql</li>
+    <li>Puma</li>
+    <li>SASSC-Rails</li>
+    <li>Webpacker</li>
+    <li>Turbolinks</li>
+    <li>Jbuilder</li>
+    <li>Bootsnap</li>
+    <li>FontAwesome (font-awesome-rails)</li>
+    <li>Simple_Form</li>
+    <li>Devise</li>
+  </ul><br />
+  <li>NPM (Yarn)</li>
+  <ul>
+    <li>Babel</li>
+    <li>React</li>
+    <li>Actioncable</li>
+    <li>Active Storage</li>
+    <li>Turbolinks</li>
+  </ul>
+ </ul>
+</p>
