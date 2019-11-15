@@ -39,7 +39,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  border: solid var(--border-color) 1px;
+  // border: solid var(--border-color) 1px;
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
   margin: 3% auto;
   padding: 2% 5%;
   max-width: 1020px;
