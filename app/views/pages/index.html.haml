@@ -2,9 +2,20 @@
   = render '/shared/navbar'
   .index-container
     .blog-container
+      %span.blg-date Tue, May 12th 2020
+      %h2.index-header So far... WHAT A YEAR!
+      %p Welcome back friends, it's been some time since last I wrote. The world is (at least on the surface) a much different place than it was when I last wrote in January.
+      %p I have not been entirely idle, though.  I begun repracticing PHP, a language I hadn't looked at in several years, there have been some interesting changes to it, but nothing mindbogglingly different (yet).  Started playing around with PHP Composer and Laravel, for those of you familiar with Ruby, its Bundler/Gem system, and Rails, Composer and Laravel will feel a bit comfortable.
+      %p Made some more progress with RSpec, starting to feel more comfortable writing my own tests as apposed to following tutorials, interestingly, took a couple of days to play with TDD in JavaScript (JEST), left that alone when I realized that I still wasn't fluent in RSpec, but it was fun to be able to apply what I know from RSpec to JEST.
+      %p Now, I'm updating my blog. Specifically, I changed the Font-awesome Gem I use for this site from 'font-awesome-rails' to 'font-awesome-sass', I'd had problems with font-awesome 5 with the previous gem, not so much with swapped gem updated the icons too. Didn't take all that long to do, one commit. Oh, also to write a new post... which is what I'm doing now.
+      %p I haven't forgot about my promise to start the bug tracking system, though I've put that on the back burner for the time being. I've decided to take a couple of weeks to focus on My job hunt, racking my brain for a more 'juicier project'. Oh, I've also decided to sit down and learn a "real" programming language.
+      %p I've started learning C++. The purpose of my doing this is because I suspect that this will help me conceptualize programming concepts better. In addition to this, I have been reading A Common-Sense Guide to Data Structures and Algorithms, which I hope will help me become, and certainly feel, like a more competent programmer.
+      %p Lastly, I've fully moved to, and am using as my daily driver, i3-gaps / tmux tools and work flow.  I have to say that while it took some time to configure it properly, and I still haven't tested a multi-monitor setup, I can't tell you what it's done for my workflow, I have almost completely stopped using my mouse, and it's amazing to be honest. Although, I have heard some amazing things about Suckless tools, specifically Suckless dwm and st. It'll be a couple of weeks before I feel like I've got time to test dwm and st out.. Been considering discontinue using Ubuntu and just use bare Debian, I don't think I'll be able to go full open source, as my laptop uses an AMD processor and the graphics drive is closed source (as far as I know). to be honest, what really bothers me is the package management system, most of my apps are installed via CLI, but then some apps are installed via SNAP and just finding out where certain files and directories are is a hassle. For example, I wanted to create a pattern in Gimp, but had trouble located the pattern's directory. After searching for the information for about 20 minutes, I came to discover that there were, in fact, two sets of pattern directories based on two different versions of Gimp, what I mean ot say that within Gimps snap system, it seemed that two versions of Gimps directory structure was there and each had its own patterns sub directory.  Then I tried to create and install the pateren folder containing the patter file within each sub directory and it rejected the operation (of course I was root).  I could go on a rant for the next couple of paragraphs, needless to say, resolved that issue in a round about way, but it seems like my file system has got a bit spaghetti like, and I don't like it.
+      %p anyway, I'm going to end this post for the time being. I'll write soon.
+    .blog-container
       %span.blg-date Mon, January 27th, 2020
       %h2.index-header Talk about a hiatus...
-      %p So I took a couple of weeks away from blogging... Happy Holidays and Merry New Year and such. 
+      %p So I took a couple of weeks away from blogging... Happy Holidays and Merry New Year and such.
       %p Although I have not written in six or so weeks, I have not been idle... though I have to admit I got lost down the rabbit hole for a bit, interestingly enough.
       %p I was learning TDD with RSpect, and I got stuck trying to learn how to test Draper decorator wrappers when I came to the realization that I did not feel very comfortable with my work flow. I had also come across the concept of tiling window managers...
       %p Now I know what some of you are thinking, but I had been learning RSpec for two weeks straight and was beginning to feel burnt out, and I thought that by adopting a new style of Window manager, not to mention that I already use Tmux and Vim, that I might squeeze a bit more productivity and it would help get me into flow faster. The only thing I regret, aside from not writing a blog sooner, is spending a week playing around with different operating systems, most of which was Arch Linux... Not that I regret  trying them, man I did upgrade my Linux skill set a bit, but more like I could have spent less time on that and got back to RSpec sooner.
@@ -22,22 +33,22 @@
       %p It has been a whole seven days since last I wrote, and you may be asking yourself 'prey-tell, what has that man been doing'?  Well, I doubt that those were the words you used, or the question you actually asked yourself. The question you probably asked yourself was "I'm sure that have something better/more important to do, don't I?". Never the less...
       %p For the last seven-some-odd days I've been learning... TESTING.
       %p I know, I know, to some of you, this may seem like a boring topic, and while I can't say that I've been avoiding the topic for that last six months in which I've become a 'serious software developer', I've certainly ... neglected ... the topic.
-      %p 
-        in doing so, I've gone down a long winding odyseey where I've: 
+      %p
+        in doing so, I've gone down a long winding odyseey where I've:
         %ul
           %li Abandoned my mouse for the most part
           %li Began using a new editor (Visual Studio Code)
           %li Abandoned Visual Studio Code and Learned mindblowing techniques in Vim (oh how I love Vim)
           %li Learned a great deal about RSpec and Behavior Driven Development.
       %p Here is the good of it: I feel like I've learned so much. Ever have the feeling that you are a whole new developer? That's' how I feel. Here is the bad of it: I don't feel much closer to the end goal, which is feeling comfortable testing within the Rails framework. That's not entierly true. I feel much closer, but there are certain aspects of Testing that I still feel uncomfotable. And so it goes..
-      %p 
+      %p
         There are so many people I owe a debt of gratitude, let me start out by linking:
         %ul
           %li #{ link_to 'Testing with Rspec', 'https://www.youtube.com/watch?v=71eKcNxwxVY&t=208s', target: '_blank'} Youtube video by Drifting Ruby.
           %li #{ link_to 'Test Driven Rspec videos series', 'https://www.youtube.com/watch?v=K6RPMhcRICE&list=PLr442xinba86s9cCWxoIH_xq5UE9Wwo4Z', target: '_blank'} By Monoso
           %li #{ link_to 'Effective Testing with RSpec 3', 'https://pragprog.com/book/rspec3/effective-testing-with-rspec-3', target: '_blank'} by Myron Marston and Ian Dees, published by The Pragmatic Bookshelf
           %li #{ link_to 'Mastering the Vim Language', 'https://www.youtube.com/watch?v=wlR5gYd6um0&t=406s', target: '_blank'} by Chris Toomey and Thoughtbot
-          
+
     .blog-container
       %span.blg-date Thu, December 5th, 2019
       %h2.index-header Really tired, didn't want to go another day without..
