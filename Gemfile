@@ -30,7 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'actionview', '>= 6.0.2.2'
 # font Awesome
-gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 5.12.0'
 
 gem 'simple_form'
 gem 'devise'
