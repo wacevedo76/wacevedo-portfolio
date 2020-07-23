@@ -3,6 +3,10 @@ details[open] summary ~ * {
   animation-duration: .5s;
 }
 
+details summary::-webkit-details-marker {
+  display: none;
+}
+
 @keyframes sweep {
   0%    {opacity: 0; margin-left: -10px}
   50%   {opacity: .5; margin-left: 10px}
