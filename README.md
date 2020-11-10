@@ -20,7 +20,6 @@ Rbenv (Ruby 2.5.3)
   <li>NPM (Yarn)</li>
   <ul>
     <li>Babel</li>
-    <li>React</li>
     <li>Actioncable</li>
     <li>Active Storage</li>
     <li>Turbolinks</li>
