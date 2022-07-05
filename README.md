@@ -1,31 +1,24 @@
-******************** W. Acevedo - Welcome to my personal portfolio ********************<br />
-<p>The technologies I am using in this Rails project is as follows:<br />
+# README
 
-Rbenv (Ruby 2.5.3)
-<ul>
-  <li>Gems</li>
-  <ul>
-    <li>Rails 6</li>
-    <li>postgresql</li>
-    <li>Puma</li>
-    <li>SASSC-Rails</li>
-    <li>Webpacker</li>
-    <li>Turbolinks</li>
-    <li>Jbuilder</li>
-    <li>Bootsnap</li>
-    <li>FontAwesome (font-awesome-rails)</li>
-    <li>Simple_Form</li>
-    <li>Devise</li>
-  </ul><br />
-  <li>NPM (Yarn)</li>
-  <ul>
-    <li>Babel</li>
-    <li>Actioncable</li>
-    <li>Active Storage</li>
-    <li>Turbolinks</li>
-  </ul>
- </ul>
-</p>
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
+Things you may want to cover:
 
-check
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
