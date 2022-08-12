@@ -1,0 +1,179 @@
+<% cv_skills = [
+  "React JS",
+  "Ruby",
+  "Ruby on Rails",
+  "RSpect",
+  "Python",
+  "HTML / CSS / SCSS",
+  "Bootstrap",
+  "Webback / Babble",
+  "OOP / MVC",
+  "Git / GitHub",
+  "Figma (Basic Prototyping)",
+  "Linux Administration (intermediate)",
+  "SQL & Database Management",
+  "Experienced computer technician",
+  "Well organized",
+  "The ability to work well within a team",
+  "Excellent communication, written and interpersonal skills"
+] %>
+<% cv_professional_title = "Full Stack Web Developer" %>
+<% cv_mobile = "+48 690 157 026" %>
+<% cv_email = "william.acevedo@gmail.com" %>
+<% cv_site = "wacevedo.pl"%>
+<% cv_linkedin = "wacevedo" %>
+<% cv_github = "wacevedo76" %>
+<% cv_focus = "My focus is to secure a position as a web developer for a firm where my deep interest in programming can have a meaningful impact on business, to have the opportunity to work alongside similar minded colleagues, as well as have the to opportunity to develop my skills in a professional setting." %>
+<% cv_employment_status = "Jestem obywatelem stanów z jednoczonych , leczjako małżonek polskiego obywatela , mam uregulowany status pobytu w polsce i korzystam z dostepu do rynku pracy na tych samych zasadach co obywatele rzeczpospolitej polskiej (nie potrzebuję zezwolenia na pracę)" %>
+<% cv_permission_statement = "W Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych dla realizacji procesu rekrutacji (zgodnie z ustawą z dn. 29.08.97 roku o ochronie danych osobowych Dz.U Nr 133 poz. 883)" %>
+<% cv_certification_celta = "Cambridge Celta Certification" %>
+<% cv_certification_celta_date = "July 2010" %>
+<% cv_certification_a_plus = "CompTIA’s A+ Certification"%>
+<% cv_certification_a_plus_date = "January 2002" %>
+
+<% cv_previous_experience_statement = "I have spent countless hours practicing programming throughout the years and feel my previous experience has equipped me with the managerial skills, soft skills and insights needed in a well-rounded software developer" %>
+
+<% cv_previous_experience_position_elt = "English as a Foreign Language Teacher" %>
+<% cv_previous_experience_position_asd = "Advanced Service Representative" %>
+
+<% cv_previous_experience_elt_helikon = "Helikon"%>
+<% cv_previous_experience_elt_helikon_location = "Bydgoszcz, Poland"%>
+<% cv_previous_experience_elt_helikon_date = "October 2011 - June 2018" %>
+
+<% cv_previous_experience_elt_IH = "International House"%>
+<% cv_previous_experience_elt_IH_location = "Bydgoszcz, Poland"%>
+<% cv_previous_experience_elt_IH_date = "September 2010 - June 2011"%>
+
+<% cv_previous_experience_elt_cv = "Cablevision"%>
+<% cv_previous_experience_elt_cv_location = "Bronx, New York"%>
+<% cv_previous_experience_elt_cv_date = " Apr 2007 - June 2009"%>
+
+<div class="app-container">
+  <%= render '/shared/navbar' %>
+
+  <div class="cvContainer">
+    <div id="cv-header">
+      <div id="cv-headshot">
+        <%= image_tag 'cv/BestProfilePic2.jpg', class: 'avatar-med' %>
+      </div>
+      <div id="cv-title" class='cv-h1'>
+        <span id="cv-name">William Acevedo</span>
+        <span id="cv-professional-title"><%= cv_professional_title %></span>
+      </div>
+      <div id="cv-contact">
+        <div id="cv-mobile">mobile: <%= cv_mobile %></div>
+        <div id="cv-email">email: <%= cv_email %></div>
+        <div id="cd-portfolio">site: <%= cv_site %></div>
+        <div id="cv-linkedin">LinkedIn: <%= cv_linkedin %></div>
+        <div id="cv-github">GitHub: <%= cv_github %></div>
+      </div>
+    </div>
+    <div id="cv-body">
+      <details id="cv-focus" >
+        <summary id="cv-focus-title" class="cv-title">Focus</summary>
+        <div id="cv-focus-content" class="cv-content"l><%= cv_focus %>
+        </div>
+      </details>
+
+      <details id="cv-skills" >
+        <summary id="cv-skills-title" class="cv-title">Skills</summary>
+        <div id="cv-skills-content" class="cv-content"l>
+          <ul class="no-bullet">
+            <% cv_skills.each do |skill| %>
+            <li><%= skill %></li>
+            <% end %>
+          </ul>
+        </div>
+      </details>
+
+      <details id="cv-projects" >
+        <summary id="cv-projects-title" class="cv-title">Projects</summary>
+        <div id="cv-projects-content" class="cv-content"l>
+          <ul>
+            <li> <a href="https://nabo-app.herokuapp.com">Nabo</a></li>
+            <li><a href="https://github.com/kjartur/mealshare">Thought Food</a></li>
+            <span class="cv-description">These are two Ruby on Rails, social web app projects to which I contributed a considerable amount of code.</span>
+          </ul>
+        </div>
+      </details>
+
+      <details id="cv-languages" >
+        <summary id="cv-languages-title" class="cv-title">Lanugages</summary>
+        <div id="cv-languages-content" class="cv-content">
+          <div id="cv-language-english">English (native)</div>
+          <div id="cv-language-spanish">Spanish (conversational)</div>
+          <div id="cv-language-polish">Polish (A1)</div>
+      </details>
+
+      <details id="cv-education" >
+        <summary id="cv-education-title" class="cv-title">Education</summary>
+        <div id="cv-education-content" class="cv-content">
+          <div class="cv-school">Le Wagon Berlin - batch #244</div>
+            <div class="cv-school-date"> April - June 2019</div>
+          <div class="cv-school-description">Full Stack Development training program.</div>
+        </div>
+        <div id="cv-education-content" class="cv-content">
+          <div class="cv-school">State University of New York at Purchase</div>
+            <div class="cv-school-date"> 1997 - 2001</div>
+          <div class="cv-school-description">Major: Jazz Performance. Minor: Liberal Arts.</div>
+        </div>
+      </details>
+
+      <details id="cv-certifications" >
+        <summary id="cv-certifications-title" class="cv-title">Certifications</summary>
+        <div class="cv-certification-container cv-content">
+          <div class="cv-certification"><%= cv_certification_celta = "Cambridge Celta Certification" %></div>
+          <div class="cv-certification-date"><%= cv_certification_celta_date = "July 2010" %></div>
+        </div>
+        <div class="cv-certification-container cv-content">
+          <div class="cv-certification"><%= cv_certification_a_plus = "CompTIA’s A+ Certification"%></div>
+          <div class="cv-certification-date"><%= cv_certification_a_plus_date = "January 2002" %></div>
+        </div>
+      </details>
+
+      <details id="cv-previous-experience" >
+        <summary id="cv-previous-experience-title" class="cv-title">Previous Experience</summary>
+        <div class="cv-previous-experience-container cv-content">
+          <div class="cv-previous-experience-statement"><%= cv_previous_experience_statement %></div>
+          <div class="professional_title_container">
+              <div class="cv-experience-professional-title">
+                <%= cv_previous_experience_position_elt%>
+              </div>
+                <ul class="previous-jobs">
+                  <li class="previous-jobs-listing">
+                    <%= cv_previous_experience_elt_helikon %> -
+                    <%= cv_previous_experience_elt_helikon_location %> |
+                    <%= cv_previous_experience_elt_helikon_date %></li>
+                  <li class="previous-jobs-listing">
+                    <%= cv_previous_experience_elt_IH %> -
+                    <%= cv_previous_experience_elt_IH_location %> |
+                    <%= cv_previous_experience_elt_IH_date %></li>
+                </ul>
+          </div>
+          <div class="professional_title_container">
+              <div class="cv-experience-professional-title">
+                <%= cv_previous_experience_position_asd%>
+              </div>
+                <ul class="previous-jobs">
+                  <li class="previous-jobs-listing">
+                    <%= cv_previous_experience_elt_cv %> &nbsp;&nbsp;-
+                    <%= cv_previous_experience_elt_cv_location %> |
+                    <%= cv_previous_experience_elt_cv_date %></li>
+                </ul>
+          </div>
+        </div>
+      </details>
+    </div>
+    <div id="cv-footer">
+      <div id="cv-employment-status" class="cv-fineprint">
+        <%= cv_employment_status %>
+      </div>
+      <div id="cv-permission-statement" class="cv-fineprint">
+        <%= cv_permission_statement %>
+      </div>
+
+    </div>
+  </div>
+
+  <%= render 'shared/footer' %>
+</div>

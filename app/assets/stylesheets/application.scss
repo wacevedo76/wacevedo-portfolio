@@ -1,0 +1,18 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+ //External libraries
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Yesteryear&display=swap');
+//font-family: 'Yesteryear', cursive;
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+//font-family: 'Nova Mono', monospace;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+//font-family: 'Roboto', sans-serif;
+
+ @import './main-config';
+ @import './components/index';

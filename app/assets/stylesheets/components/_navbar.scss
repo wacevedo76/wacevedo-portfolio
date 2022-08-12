@@ -1,0 +1,143 @@
+.username {
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_show {
+  visibility: visible;
+}
+
+.nav_rotate_open {
+  transform: rotate(90deg);
+  transition-duration: .2s;
+}
+
+.nav_rotate_close {
+  transform: rotate(0deg);
+  transition-duration: .2s;
+}
+
+.svg-icons {
+  width: 1em;
+  padding: .5rem;
+  fill: var(--seen-primary);
+}
+
+#day-night {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em;
+}
+
+#navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2vh 0;
+
+  > #navLeftSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > #navName {
+      color: var(--link-color);
+      font-family: 'Yesteryear', cursive;
+      font-size: 1.5rem;
+      padding-right: .5rem;
+      transform: rotate(-7deg);
+      text-decoration: none;
+    }
+    > #navProfession {
+      font-family: 'Nova Mono', monospace;
+      padding-left: .7rem;
+    }
+  }
+
+  > #navRightSideContainer {
+    margin: 0;
+    display: flex;
+
+    > #navToggler {
+      justify-content: center;
+      align-items: center;
+
+    }
+    > #navMenu {
+
+      > a {
+        font-family: 'Nova Mono', monospace;
+        padding: .5rem;
+        color: var(--link-color);
+
+        text-decoration: none;
+        &:hover {
+          color: var(--link-hover-color);
+        }
+        &:visited {
+          color: var(--link-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 551px){
+  #navContainer {
+    > #navRightSideContainer {
+      > #navToggler {
+        visibility: visible;
+        display: none;
+        background-color: var(--bg-color);
+      }
+
+      > #navMmenu {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .username {
+    display: none;
+  }
+  #navName {
+    font-size: .7rem;
+  }
+  #navProfession {
+    font-size: .7rem;
+  }
+  #navRightSideContainer{
+    > #navToggler {
+      visibility: visible;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > #navMenu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      z-index: 2;
+      box-shadow:0px 0px 3px .1px rgba(0, 0, 0, .2);
+
+      width: 100px;
+      background-color: var(--bg-color);
+      border: solid var(--border-color) 1px;
+      padding: .5em;
+    }
+  }
+}

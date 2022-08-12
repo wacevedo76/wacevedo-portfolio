@@ -1,0 +1,206 @@
+.app-container
+  = render '/shared/navbar'
+  .index-container
+    .blog-container
+      %span.blg-date Tue, May 12th 2020
+      %h2.index-header So far... WHAT A YEAR!
+      %p Welcome back friends, it's been some time since last I wrote. The world is (at least on the surface) a much different place than it was when I last wrote in January.
+      %p I have not been entirely idle, though.  I begun repracticing PHP, a language I hadn't looked at in several years, there have been some interesting changes to it, but nothing mindbogglingly different (yet).  Started playing around with PHP Composer and Laravel, for those of you familiar with Ruby, its Bundler/Gem system, and Rails, Composer and Laravel will feel a bit comfortable.
+      %p Made some more progress with RSpec, starting to feel more comfortable writing my own tests as apposed to following tutorials, interestingly, took a couple of days to play with TDD in JavaScript (JEST), left that alone when I realized that I still wasn't fluent in RSpec, but it was fun to be able to apply what I know from RSpec to JEST.
+      %p Now, I'm updating my blog. Specifically, I changed the Font-awesome Gem I use for this site from 'font-awesome-rails' to 'font-awesome-sass', I'd had problems with font-awesome 5 with the previous gem, not so much with swapped gem updated the icons too. Didn't take all that long to do, one commit. Oh, also to write a new post... which is what I'm doing now.
+      %p I haven't forgot about my promise to start the bug tracking system, though I've put that on the back burner for the time being. I've decided to take a couple of weeks to focus on My job hunt, racking my brain for a more 'juicier project'. Oh, I've also decided to sit down and learn a "real" programming language.
+      %p I've started learning C++. The purpose of my doing this is because I suspect that this will help me conceptualize programming concepts better. In addition to this, I have been reading A Common-Sense Guide to Data Structures and Algorithms, which I hope will help me become, and certainly feel, like a more competent programmer.
+      %p Lastly, I've fully moved to, and am using as my daily driver, i3-gaps / tmux tools and work flow.  I have to say that while it took some time to configure it properly, and I still haven't tested a multi-monitor setup, I can't tell you what it's done for my workflow, I have almost completely stopped using my mouse, and it's amazing to be honest. Although, I have heard some amazing things about Suckless tools, specifically Suckless dwm and st. It'll be a couple of weeks before I feel like I've got time to test dwm and st out.. Been considering discontinue using Ubuntu and just use bare Debian, I don't think I'll be able to go full open source, as my laptop uses an AMD processor and the graphics drive is closed source (as far as I know). to be honest, what really bothers me is the package management system, most of my apps are installed via CLI, but then some apps are installed via SNAP and just finding out where certain files and directories are is a hassle. For example, I wanted to create a pattern in Gimp, but had trouble located the pattern's directory. After searching for the information for about 20 minutes, I came to discover that there were, in fact, two sets of pattern directories based on two different versions of Gimp, what I mean ot say that within Gimps snap system, it seemed that two versions of Gimps directory structure was there and each had its own patterns sub directory.  Then I tried to create and install the pateren folder containing the patter file within each sub directory and it rejected the operation (of course I was root).  I could go on a rant for the next couple of paragraphs, needless to say, resolved that issue in a round about way, but it seems like my file system has got a bit spaghetti like, and I don't like it.
+      %p anyway, I'm going to end this post for the time being. I'll write soon.
+    .blog-container
+      %span.blg-date Mon, January 27th, 2020
+      %h2.index-header Talk about a hiatus...
+      %p So I took a couple of weeks away from blogging... Happy Holidays and Merry New Year and such.
+      %p Although I have not written in six or so weeks, I have not been idle... though I have to admit I got lost down the rabbit hole for a bit, interestingly enough.
+      %p I was learning TDD with RSpect, and I got stuck trying to learn how to test Draper decorator wrappers when I came to the realization that I did not feel very comfortable with my work flow. I had also come across the concept of tiling window managers...
+      %p Now I know what some of you are thinking, but I had been learning RSpec for two weeks straight and was beginning to feel burnt out, and I thought that by adopting a new style of Window manager, not to mention that I already use Tmux and Vim, that I might squeeze a bit more productivity and it would help get me into flow faster. The only thing I regret, aside from not writing a blog sooner, is spending a week playing around with different operating systems, most of which was Arch Linux... Not that I regret  trying them, man I did upgrade my Linux skill set a bit, but more like I could have spent less time on that and got back to RSpec sooner.
+      %p
+        Here is what I'm working with:
+        %ul
+          %li #{ link_to 'i3-gaps wm', 'https://github.com/Airblader/i3', target: '_blank' } (within virtualbox, the Linux wifi drive is not directly supported by the manufacturer and I don't what to wipe and fiddle with hardware issues just yet).
+          %li Tmux - here is a nice tmux script that integrates a powerbar type bar #{ link_to 'Oh My Tmux!', 'https://github.com/gpakosz/.tmux', target: '_blank'}.
+          %li Urxvt terminal - A highly configurable terminal emulator - still learning how to intergrate and make the autocompletion perl scripts work with it.
+          %li And Vim - I now consider myself an intermediate user of vim, I have to say that the more I use it the more I love it...
+      %p So it's back to work now. Have a great week and I'll write more soon.
+    .blog-container
+      %span.blg-date Thu, December 12th, 2019
+      %h2.index-header Testing, Testing, 1, 2, 3...
+      %p It has been a whole seven days since last I wrote, and you may be asking yourself 'prey-tell, what has that man been doing'?  Well, I doubt that those were the words you used, or the question you actually asked yourself. The question you probably asked yourself was "I'm sure that have something better/more important to do, don't I?". Never the less...
+      %p For the last seven-some-odd days I've been learning... TESTING.
+      %p I know, I know, to some of you, this may seem like a boring topic, and while I can't say that I've been avoiding the topic for that last six months in which I've become a 'serious software developer', I've certainly ... neglected ... the topic.
+      %p
+        in doing so, I've gone down a long winding odyseey where I've:
+        %ul
+          %li Abandoned my mouse for the most part
+          %li Began using a new editor (Visual Studio Code)
+          %li Abandoned Visual Studio Code and Learned mindblowing techniques in Vim (oh how I love Vim)
+          %li Learned a great deal about RSpec and Behavior Driven Development.
+      %p Here is the good of it: I feel like I've learned so much. Ever have the feeling that you are a whole new developer? That's' how I feel. Here is the bad of it: I don't feel much closer to the end goal, which is feeling comfortable testing within the Rails framework. That's not entierly true. I feel much closer, but there are certain aspects of Testing that I still feel uncomfotable. And so it goes..
+      %p
+        There are so many people I owe a debt of gratitude, let me start out by linking:
+        %ul
+          %li #{ link_to 'Testing with Rspec', 'https://www.youtube.com/watch?v=71eKcNxwxVY&t=208s', target: '_blank'} Youtube video by Drifting Ruby.
+          %li #{ link_to 'Test Driven Rspec videos series', 'https://www.youtube.com/watch?v=K6RPMhcRICE&list=PLr442xinba86s9cCWxoIH_xq5UE9Wwo4Z', target: '_blank'} By Monoso
+          %li #{ link_to 'Effective Testing with RSpec 3', 'https://pragprog.com/book/rspec3/effective-testing-with-rspec-3', target: '_blank'} by Myron Marston and Ian Dees, published by The Pragmatic Bookshelf
+          %li #{ link_to 'Mastering the Vim Language', 'https://www.youtube.com/watch?v=wlR5gYd6um0&t=406s', target: '_blank'} by Chris Toomey and Thoughtbot
+
+    .blog-container
+      %span.blg-date Thu, December 5th, 2019
+      %h2.index-header Really tired, didn't want to go another day without..
+      %p
+        So, do you know how when you are presented with a programming problem and you think up of a solution to the problem and you spend 10 hours on it because:
+      %ul
+        %li You have to work within a language dialect with which you are unfamiliar.
+        %ul
+          %li You learn the dialect
+          %li You struggle with the dialect because while you know it, it is still alien to you.
+          %li You retool because if your going to work in the dialect, do some work now to make it easier down the road.
+        %li You don't remember the exact syntax (grammer) to approch the problem correctly, possibly because you just spent the last 3 - 4 hours learning and working in a new dialect and your mind hasn't fully switched contexts, (say working with Ruby for 3 hours, then going to work in JavaScript, or Python or some other framework/DSL).
+        %ul
+          %li Go find the correct syntax
+        %li You reach your solution, and it isn't clean, so you refactor
+        %ul
+          refactor, debug, rinse repeat
+      and Voilà, it works... but it's slow.... but it works and you move on to the next problem (relatively clean code that works, but is slower than you had expected is better than non working code).
+      %p A week down the line and you discover a module that exsists for the problem you'd had a week prior, ... this module had exsisted far before you needing to tackle the problem, but this solution approches the problem from a different, and totally unseen (by the programmer) angle... and because you don't know the module... but you now know the dialect and the overall context of the problem, it only takes you a third of the time to resolve the issue (with the help of version control (Git)  of course).
+      %p And your new, cleaner solution is not any faster... in fact, it might be a wee bit slower...
+      %p Okay, its 12:40 in the morning. I'd like to go on, but I'm burned out for today.
+      %p
+        Shout outs to these people, though I'm sure that they'll never read this blog... likes on their respective social media platforms will have to suffice for the time being:
+      %ul
+        %li
+          The people who created and maintain #{link_to 'Haml', 'http://haml.info', target: '_blank'} , really cool tool.
+        %li
+          The creators and maintainers of #{link_to 'Rails / Draper', 'https://github.com/drapergem/draper', target: '_blank'}, also a really cool tool
+        %li
+          Jef Casimir and his talk at Lone Star Ruby Conference 2011 titled "Blow Up Your Views" #{link_to 'link', 'https://www.youtube.com/watch?v=VC5z8nadnQE&t=1217s', target: '_blank'}
+        %li
+          Christopher Okhravi for his video on the Decorator OOP Design Patter #{link_to 'link', 'https://www.youtube.com/watch?v=GCraGHx6gso&t=2084s', target: '_blank'}
+    .blog-container
+      %span.blg-date Fri, November 22nd, 2019
+      %h2.index-header It's going to be one of those weekends...
+      %p A lot has happend, but not much in working on my issue tracker.
+      %p So Wednesday morning, I continue with the tasks that had been given to me by the recruiter, I'm on the fifth task and I feel like I'm just about to finish it. I place all the comments for movies in a partial and have it render into the movie review page. I then begin writing the form to capture, process and save a new comment from a logged in user. there are two or three other requirements (the user can only see comments that are related to the specific movie being displayed as apposed to all the comments of all the movies in the data base. Also the restriction that the user can only write one coment per film. the User can then either edit or delete their original comment but not write an addional one.
+      %p The system throws an error and I proceed to try everything I can think of the resolve the issue for an hour.  I hit all the regular sources... Google, Rails Guides, Stack overflow... I find no relevent answers to my problem.
+      %p but that isn't the worst of it.  I don't work on a team, I only have myself and my text editor (and I have the internet and the whole of knowledge of human existance... yes yes... But if you're a developer you know how valuable it is to actually work with another person)  Even if the other person doesn't have the solution, or give useful feed back, it's often helpful to present a problem and just hash out opossible solutions with a real live person.
+      %p but alas, it is only me. SO I began constructing a question on Stack Overflow.  I present the problem, format the bits of the files that are relevant or the cause of the problem (there were three) and then I format them on stack overflow.  Stack overflow complains that I haddn't written out the comments correctly and I proceed to wrestle with that for another 20 minutes, or so. At that point I had spent over three to four hours on this one issue and realize that what I needed was to just walk away from the code.  I was caught up in my own way of thinking about the problem and that maybe some distance from the code and the problem would help.
+    .blog-container
+      %span.blg-date Tue, November 19th, 2019
+      %h2.index-header My journey continues...
+      %p On Friday afternoon I recieved and email from a recruiter... which I thought was a nice change from the boiler-plate rejection emails I had usually recieved from recruiters and hiring managers and so forth...
+      %p ... maybe there is something to building a portfolio website... but I digress.
+      %p Moving forward, I will be refering to this recruiter using the pronouns they, them, and their to protect that person's identity, out of professional courtesy.
+      %p
+        Now, I fully understand the need for caution when hiring. Generally speaking, the process is expensive, time consuming, and can be filled with legal problems if the wrong person is hired, not to mention the ramifications for the people involved with hiring a person un or under qualified for a position.
+        So knowing this, I fully understand and accept that finding my first position as a developer is going to be difficult.
+      %p I was unsurprisingly excited when I recived the recruter's email informing me that they had shown interest in me and where interested in moving forward in the interview process, but that they wanted to get a better sence of how well I coded, therefore I was given a series of six tasks to complete, and that I was given four days to complete them from the time the email was sent.
+      %p I recieved the email at 15:41 (my local time) on Friday, but didn't look at it until about an hour and a half afterwards
+      %p
+        The tasks I was given were contained in a Github repo and I will give basic descriptions of the tasks (in order to protect the intelectual property of said company):
+      %ol
+        %li
+          Using an API
+          %ul
+            %li
+              I had to pull three sets of data off of an api and apply this data to a set of pre-existing
+              data, this new data could not be saved to the database.
+        %li
+          Building an API
+          %ul
+            %li
+              Using the pre-existing seed data, I was to use this data to create two versions of an api.
+              The second had features that extended from the first.
+        %li
+          Troubleshoot a long running task.
+          %ul
+            %li
+              The system (web app) simulated that two seperate tasks, emails some data and emailing a list of data in CSV format. I was to arrange that the user didn't have to wait for the page to load in order to get the emails
+        %li
+          Run bracket's validation
+          %ul
+            %li I was to validate that brackets ({} []) where matched, nested properly and not empty... I was to do this with a set of validations set at the model... I was also told that Regular Expressions would not work.
+        %li
+          Implement a comment feature
+          %ul
+            %li I was to set up a comments feature, and that the users of the system could only make one comment on each of the objects, the user would have to delete the comment in order to create another one (or edit their pre-existing comment).
+        %li
+          Run an sql query based on the comment system in the previous task.
+          %ul
+            %li I was to create a page where the top 10 commenters would be listed for the previous seven days.
+      Needless to say, I was excited to tackle the tasks, and I figured that I had four days (Friday afternoon to Saturday (1) Saturday to Sunday (2) Sunday to Monday (3) Monday to Tuesday (I was told Midnight day four)). It was end of day Friday, and I didn't want to bother the recruiter as it was the beginning of the weekend, so off to work I went.
+      %p .. its is late, and I've been working long hours since Friday, I'll continue my story tomorrow.
+    .blog-container
+      %span.blg-date Thu, November 14th, 2019
+      %h2.index-header And so it begins.
+      %p So this moring, cup of coffee in hand, I sat down and began thinking about the user stories for a bug tracking system.
+      %p Now, I've never worked in a professional enviornment, and so while I had a pretty good idea what features were inportant in a bug tracker, I didn't want to just start coding away only to have to stop and backtrack because I had overlooked some important feature/dependency. So I decided that a better way of spending the next hour was to do some research.. and research I did!
+      %p
+        I stubled on a few resources, I found this
+        %a{href: "https://www.youtube.com/watch?v=_rwBbhur9dw&t=62s", target: "_blank"} Youtube Link
+        that described what bug tracking / issue tracking software does, but at an elementary level. It was a five minute watch, and aside from the generated voice it wasn't half bad.
+      %p
+        Afterwards, I did some more googling and stubled upon a pretty interesting design source from Oracle:
+        = succeed "." do
+          %a{href: "https://docs.oracle.com/cd/E14373_01/appdev.32/e13363/issue_track_obj.htm#HTMAD010", target: "_blank"} How to design an Issue Tracking Application
+      %p
+        Of particular interest to me was the data models (here's a link =&gt;
+        = succeed ")." do
+          %a{href: "https://docs.oracle.com/cd/E14373_01/appdev.32/e13363/img/ui_data_model.gif", target: "_blank"} IMAGE
+      %p
+        Last night I added the
+        %a{href: "https://github.com/plataformatec/devise", target: "_blank"} Devise
+        Gem to my portfolio for authentication, generated the views and began customizing them, figured I could do this all day and still not be happy, so I then stopped, pushed to Github, merged the branch, updated local, pushed to Heroku, migrated the database, created a user for myself and then disabled registration... because who'd really want an account on this site... it isn't as if I offer anything worth anything yet :)
+      %p on a related note, I started using MS Visual Code today. Really nice editor, builtin terminal, which is nice. I'll have to figure out how to make Power line look a bit better. But It is a bit faster than Atom, which in my limited experience is a nice editor. I tip my hat to Kjartan Manvelyan for the recommendation.
+      %p Okay, just writing now because I doubt I'll have a chance later. Have a great day.
+    .blog-container
+      %span.blg-date Wed, November 13th, 2019
+      %h2.index-header Not finished yet, but when will it ever be :)
+      %p So it took a week to finish my cv... well, we did have a four day weekend where I didn't touch the 'puter. The fonts and font colors are a bit on the bland side. Never-the-less...
+      %p Now that these two pages are done, I can begin my first real non-static project.
+      %p in the last two months or so, I've been listening to you-tubers who are (or claim to be) professional web developers, and one of them (I will link to them when I am able to find the vid) presented the idea of creating a bug tracking system. It will take me a day to create the user stories. Another day to create the database structure and the data flow, and then two, maybe three days to get the wire frame going and some more time for aesthetics.  So, I'm looking at a four to five day sprint on my new bug tracking app, though I think I am overestemating how much time it will actually take.  I'll keep you posted on my progress :)
+    .blog-container
+      %span.blg-date Wed, November 6th, 2019
+      %h2.index-header SVGs, need to learn more :)
+      %p I finished the Day/Night mode feature last night, searched on Font Awesome for a sun and a moon icon, easy peasy I thought...
+      %p First issue, for some reason the Font Awesome links didn't work. Now, what's strange is that the icons at the bottom of the page are also from Font Awesome. So I assumed that the service was linked / referenced correctly and I checked the links that I had just entered with the links in the footer. They appeared to be formatted the same way.
+      %p Okay, so I think to myself, let me just download the svgs, place them in the assets pipeline (Rails Speak), use Rails helper links and I can use them just like I use them when they're linked from Font Awesome... HA! Then reality hits..  these are NOT FONTS! They're IMAGES!
+      %p I have to thank Font Awesome for such a cool service. It's obvious to all who read this and who do frontend work that I don't know much about svg images. Cool subject, I've got to learn more about it.  However, for now, I've got to move on.
+      %p Tomorrow, I put out my CV page. I'll get the content out by tomorrow afternoon, and hopefuly I can get the responsive feature finished by Friday.
+      %p Monday morning, I'll start a 5 day sprint to work on my bug tracker. I'm putting my Blog CMS feature on the backburner for the immediate, thought about it and realized that the cms feature will require Authorization and Authentication.
+      %p Authentication, not real a problem... Authorization is a different animal entirely.
+      %p Okay, have a good day.
+    .blog-container
+      %span.blg-date Tues, November 5th, 2019
+      %h2.index-header Night and day...
+      %p So I began implementing a night and day mode for my site, once they are ready, I'll include a moon and a sun icon somewhere in the same location on all of the pages... which would give the apperace that they are placed there statically.
+      %p coincidentally, CSS custom properties are pretty cool.
+      %p
+        Okay, so I've been thinking about the features to implement on this site, and aside from making the site look less like an eighties-style professional business card (which is what I had intended), when I finish the night/day mode feature. I'll:
+        %br/
+      %ul
+        %li implement a proper blog feature, CMS style (though, the blog markup doesn't take all that much time). Though, that will be difficult to show.
+        %li a bug tracker, to share my woes with the rest of the world.
+        %li (possibly) a time tracker
+      %p
+        The CSS for the Night/Day modes is pretty much done.. just have to work out the JavaScript. If all works out, I'll've finished it come 'morrow night.
+        Okay, have a good day all.
+    .blog-container
+      %span.blg-date Mon, November 4th, 2019
+      %h2.index-header That took some time...
+      %p So my last post (or first post) was written twenty-five or so days agao, and you might be wondering why it took me so long to write another post. Well, here is the long of it.
+      %p It actually took me this long to deploy my app, and along the way I learned a lot of things about deploying a Rails app: I learned a great deal about webservers (Appache2 and Nginx), a bit about applications servers (Passenger mainly) and working with Virtual Private Machines and Setting up firewalls and ... and after twenty-five days, I still hadn't deployed.
+      %p I was learning a whole little about a whole bunch of things, but finally decided to just deploy to Heroku now and learn and play with these things along the way. Tis better to have a live project now and improve than to wait till everything is just right, but never deploy at all.
+      %p ... more to come.
+    .blog-container
+      %span.blg-date Wed, October 19th, 2019
+      %h2.index-header My first ...
+      %p Hello all,
+      %p This site exists not only to showcase my abilities as a web developer, but to have a place to play with differenet web design ideas.
+      %p I spent the better part of this week working on this site's responsive features, the navigation button that appears in place of the rightside navigation at fullscreen, but I still hadn't published this site yet.
+      %p ... therefore, while this site can be described as "sparce" at the moment, I'll be filling it with new content and features as the week, month and year progresses.
+  = render 'shared/footer'
