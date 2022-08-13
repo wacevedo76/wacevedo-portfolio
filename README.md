@@ -1,11 +1,11 @@
 ******************** W. Acevedo - Welcome to my personal portfolio ********************<br />
 <p>The technologies I am using in this Rails project is as follows:<br />
 
-Rbenv (Ruby 2.5.3)
+Rbenv (Ruby 3.1.1)
 <ul>
   <li>Gems</li>
   <ul>
-    <li>Rails 6</li>
+    <li>Rails 7</li>
     <li>postgresql</li>
     <li>Puma</li>
     <li>SASSC-Rails</li>
