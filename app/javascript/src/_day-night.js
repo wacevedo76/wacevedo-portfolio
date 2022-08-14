@@ -2,7 +2,7 @@ const dayModeEle = document.getElementById('dayMode');
 const nightModeEle = document.getElementById('nightMode');
 
 function dayNightModeSwitcher(modeChoice) {
-  const pageStyles = window.getComputedStyle(document.body);
+  // const pageStyles = window.getComputedStyle(document.body);
   const style = document.documentElement.style;
   // style.setProperty('--seen-primary', 'black');
 
@@ -25,6 +25,10 @@ function dayNightModeSwitcher(modeChoice) {
     style.setProperty('--space-primary', '#1d1f21');
     style.setProperty('--space-secondary', '#1d1f21');
   }
+}
+
+if (window.matchMedia('prefers-color-scheme: dark').matches) {
+  dayNightModeSwitcher('night');
 }
 
 dayModeEle.addEventListener('click', () => {
