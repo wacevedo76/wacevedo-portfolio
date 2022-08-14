@@ -1,7 +1,7 @@
 <div id="navContainer">
   <div id="navLeftSide">
     <%= link_to 'W. Acevedo', root_path, id: 'navName' %> |
-    <span id="navProfession"> WEB DEVELOPER </span>
+    <span id="navProfession"> SOFTWARE DEVELOPER</span>
     <div id="day-night">
       <div><%= icon('fas', 'sun', id: 'dayMode', class: 'svg-icons') %></div> |
       <div><%= icon('far', 'moon', id: 'nightMode', class: 'svg-icons') %></div>
@@ -13,7 +13,7 @@
     </div>
     <% if user_signed_in? %>
       <div class="username">
-      <%= current_user.email %> - 
+      <%= current_user.email %> -
       </div>
     <% end %>
     <div id="navMenu">
