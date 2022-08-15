@@ -1,7 +1,35 @@
+const themeToggler = document.querySelector('.themeToggler');
+let lightDarkThemeBol = window.matchMedia('prefers-color-scheme: dark')['matches']
+const style = document.documentElement.style;
 
+function lighDarkModeSwitcher(modeChoice) {
 
+  if (modeChoice == true) {
+    style.setProperty('--seen-primary', 'black');
+    style.setProperty('--seen-secondary', 'blue');
+    style.setProperty('--h2-color','black');
+    style.setProperty('--bold-color', 'black');
+    style.setProperty('--seen-hover', 'blue');
+    style.setProperty('--space-primary', 'white');
+    style.setProperty('--space-secondary', 'white');
+    lightDarkThemeBol = false;
+  }
 
+  if (modeChoice == false) {
+    style.setProperty('--seen-primary', '#009688');
+    style.setProperty('--seen-secondary', 'blue');
+    style.setProperty('--h2-color','#d77236');
+    style.setProperty('--bold-color', 'white');
+    style.setProperty('--seen-hover', 'blue');
+    style.setProperty('--space-primary', '#1d1f21');
+    style.setProperty('--space-secondary', '#1d1f21');
+    lightDarkThemeBol = true;
+  }
+}
 
+themeToggler.addEventListener('click', () => {
+  lighDarkModeSwitcher(lightDarkThemeBol);
+});
 
 // old dayNightSwitcer code
 

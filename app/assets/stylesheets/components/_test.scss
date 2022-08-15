@@ -1,0 +1,12 @@
+.themeToggler {
+  width: 77px;
+  height: 20p;
+  background-color: var(--space-primary);
+  border: solid var(--seen-primary) 1px;
+  border-radius: 5px;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--seen-hover);
+  }
+}
